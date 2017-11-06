@@ -3,6 +3,10 @@ Starter application for REST API with spring framework
 
 # Openshift
 
+Deployment with OpenShift
+
+## pom.xml
+
     <profiles>
          <profile>
             <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
@@ -24,3 +28,20 @@ Starter application for REST API with spring framework
             </build>
          </profile>
       </profiles>
+      
+## Add to Project in OpenShift
+
+* Click on "Add to Project" -> Browse Catalog
+* Select "Java" -> "Red Hat JBoss Web Server (Tomcat)" -> "Tomcat 8"
+* Enter name and git repository url: https://github.com/kennycyb/spring-rest-api-starter.git
+* Click on "Create"
+      
+# Testing with curl
+
+## Response of xml
+
+	curl -X GET http://${url}/greeting -H 'accept: text/xml'
+	
+## Response of json
+
+	curl -X GET http://${url}/greeting -H 'accept: application/json'
