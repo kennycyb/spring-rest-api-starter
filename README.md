@@ -11,10 +11,6 @@ Deployment with OpenShift
 
     <profiles>
          <profile>
-            <!-- When built in OpenShift the 'openshift' profile will be used when invoking mvn. -->
-            <!-- Use this profile for any OpenShift specific customization your app will need. -->
-            <!-- By default that is to put the resulting archive into the 'deployments' folder. -->
-            <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
             <id>openshift</id>
             <build>
                <plugins>
@@ -37,6 +33,10 @@ Deployment with OpenShift
 * Select "Java" -> "Red Hat JBoss Web Server (Tomcat)" -> "Tomcat 8"
 * Enter name and git repository url: https://github.com/kennycyb/spring-rest-api-starter.git
 * Click on "Create"
+
+### Add Health Check in OpenShift
+
+* Configure "/system/ready" and "/system/alive"
       
 # Testing with curl
 
