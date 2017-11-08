@@ -1,7 +1,7 @@
 [![Build Status](https://travis-ci.org/kennycyb/spring-rest-api-starter.svg?branch=master)](https://travis-ci.org/kennycyb/spring-rest-api-starter)
 
 # spring-rest-api-starter
-Starter application for REST API with spring framework
+Starter application for REST API with spring framework.  Refer to https://docs.spring.io/spring-boot/docs/current/reference/html/ for more information.
 
 # Openshift
 
